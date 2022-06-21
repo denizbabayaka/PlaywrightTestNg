@@ -49,7 +49,7 @@ public class PlaywrightFactory {
 		page = browserContext.newPage();
 		page.navigate("https://naveenautomationlabs.com/opencart/");
 
-		return page;
+		return page; 
 
 	}
 
