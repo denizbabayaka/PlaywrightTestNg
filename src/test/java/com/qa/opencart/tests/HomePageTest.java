@@ -1,29 +1,16 @@
 package com.qa.opencart.tests;
 
 import org.testng.Assert;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import com.microsoft.playwright.Page;
-import com.qa.opencart.factory.PlaywrightFactory;
-import com.qa.opencart.pages.HomePage;
+import com.qa.opencart.base.BaseTest;
 
-public class HomePageTest {
+public class HomePageTest extends BaseTest {
 
-	PlaywrightFactory pf;
-	HomePage homePage;
-	Page page;
+	
 
-	@BeforeTest
-	public void setUp() {
-		pf = new PlaywrightFactory();
-		pf.initBrowser("chromium");
-		page = pf.initBrowser("chromium");
-		homePage = new HomePage(page);
-
-	}
+	
 
 	@Test
 
@@ -56,9 +43,6 @@ public class HomePageTest {
 		Assert.assertEquals(actualHeader, "Search - "+productName);
 	}
 
-	@AfterTest
-	public void tearDown() {
-		page.context().browser().close();
-	}
+
 
 }

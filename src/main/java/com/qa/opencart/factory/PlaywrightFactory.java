@@ -1,5 +1,10 @@
 package com.qa.opencart.factory;
 
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.util.Properties;
+
 import com.microsoft.playwright.Browser;
 import com.microsoft.playwright.BrowserContext;
 import com.microsoft.playwright.BrowserType;
@@ -15,15 +20,21 @@ public class PlaywrightFactory {
 	Browser browser;
 	BrowserContext browserContext;
 	Page page;
+	Properties prop;
 
-	public Page initBrowser(String browserName) {
-
+	public Page initBrowser(Properties prop) {
+        
+		String browserName = prop.getProperty("browser").trim();
 		System.out.println("browser name is : " + browserName);
 
 		playwright = Playwright.create();
 
 		switch (browserName.toLowerCase()) {
 		case "chromium":
+			/**
+			 * Basically what we are doing is we create a browser context and in that context 
+			 * we initialize a page instance so this page can interacts elements inside that browser  
+			 */
 			browser = playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(false));
 			break;
 
@@ -47,10 +58,34 @@ public class PlaywrightFactory {
 
 		browserContext = browser.newContext();
 		page = browserContext.newPage();
-		page.navigate("https://naveenautomationlabs.com/opencart/");
+		String url=prop.getProperty("url");
+		page.navigate(url);
 
 		return page; 
 
 	}
+	
+	/**
+	 * this method is to initialize the propeerties friom config file 
+	 * @throws FileNotFoundException 
+	 */
+	
+	    public Properties init_prop() {
+	    	
+	    	try {
+				FileInputStream ip = new FileInputStream("./src/test/resources/config/config.properties");
+				prop = new Properties();
+				//this prop variable will load all properties from fileinput stream class as key and value 
+				prop.load(ip);
+			} catch (FileNotFoundException e) {
+				e.printStackTrace();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+	    	 
+	    	   return prop;
+	    	
+	    	
+	    }
 
 }
