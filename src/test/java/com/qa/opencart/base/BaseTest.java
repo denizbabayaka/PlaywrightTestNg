@@ -13,7 +13,7 @@ public class BaseTest {
 	
 	PlaywrightFactory pf;
 	Page page;
-	Properties prop;
+	protected Properties prop;
 	protected HomePage homePage;
 	@BeforeTest
 	public Properties setUp() {

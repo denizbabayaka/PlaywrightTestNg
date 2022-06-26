@@ -1,10 +1,13 @@
 package com.qa.opencart.tests;
 
+import java.util.Properties;
+
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import com.qa.opencart.base.BaseTest;
+import com.qa.opencart.constants.AppConstants;
 
 public class HomePageTest extends BaseTest {
 
@@ -17,14 +20,14 @@ public class HomePageTest extends BaseTest {
 	public void homePageTitleTest() {
 
 		String actualTitle = homePage.getHomePageTitle();
-		Assert.assertEquals(actualTitle, "Your Store");
+		Assert.assertEquals(actualTitle, AppConstants.LOGIN_PAGE_TITLE);
 
 	}
 
 	@Test
 	public void homePageURLTest() {
 		String actualUrl = homePage.getHomePageURL();
-		Assert.assertEquals(actualUrl, "https://naveenautomationlabs.com/opencart/");
+		Assert.assertEquals(actualUrl, prop.getProperty("url"));
 	}
 	
 	@DataProvider

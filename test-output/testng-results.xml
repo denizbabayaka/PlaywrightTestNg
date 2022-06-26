@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-06-26T17:24:38Z" name="Default suite" finished-at="2022-06-26T17:24:51Z" duration-ms="12901">
+  <suite started-at="2022-06-26T17:59:13Z" name="Open Cart Test Regression PW Suite" finished-at="2022-06-26T17:59:25Z" duration-ms="11557">
     <groups>
     </groups>
-    <test started-at="2022-06-26T17:24:38Z" name="Default test" finished-at="2022-06-26T17:24:51Z" duration-ms="12901">
+    <test started-at="2022-06-26T17:59:13Z" name="Open Cart Home Page Test" finished-at="2022-06-26T17:59:25Z" duration-ms="11557">
       <class name="com.qa.opencart.tests.HomePageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.opencart.tests.HomePageTest@11392934]" started-at="2022-06-26T17:24:38Z" name="setUp" finished-at="2022-06-26T17:24:49Z" duration-ms="10836" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.opencart.tests.HomePageTest@3c153a1]" started-at="2022-06-26T17:59:13Z" name="setUp" finished-at="2022-06-26T17:59:22Z" duration-ms="9155" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="homePageTitleTest()[pri:0, instance:com.qa.opencart.tests.HomePageTest@11392934]" started-at="2022-06-26T17:24:49Z" name="homePageTitleTest" finished-at="2022-06-26T17:24:49Z" duration-ms="17" status="PASS">
+        <test-method signature="homePageTitleTest()[pri:0, instance:com.qa.opencart.tests.HomePageTest@3c153a1]" started-at="2022-06-26T17:59:22Z" name="homePageTitleTest" finished-at="2022-06-26T17:59:22Z" duration-ms="13" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- homePageTitleTest -->
-        <test-method signature="homePageURLTest()[pri:0, instance:com.qa.opencart.tests.HomePageTest@11392934]" started-at="2022-06-26T17:24:49Z" name="homePageURLTest" finished-at="2022-06-26T17:24:49Z" duration-ms="1" status="PASS">
+        <test-method signature="homePageURLTest()[pri:0, instance:com.qa.opencart.tests.HomePageTest@3c153a1]" started-at="2022-06-26T17:59:22Z" name="homePageURLTest" finished-at="2022-06-26T17:59:22Z" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- homePageURLTest -->
-        <test-method signature="searchtest(java.lang.String)[pri:0, instance:com.qa.opencart.tests.HomePageTest@11392934]" started-at="2022-06-26T17:24:49Z" name="searchtest" data-provider="getProductData" finished-at="2022-06-26T17:24:49Z" duration-ms="561" status="PASS">
+        <test-method signature="searchtest(java.lang.String)[pri:0, instance:com.qa.opencart.tests.HomePageTest@3c153a1]" started-at="2022-06-26T17:59:22Z" name="searchtest" data-provider="getProductData" finished-at="2022-06-26T17:59:23Z" duration-ms="841" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -30,7 +30,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchtest -->
-        <test-method signature="searchtest(java.lang.String)[pri:0, instance:com.qa.opencart.tests.HomePageTest@11392934]" started-at="2022-06-26T17:24:49Z" name="searchtest" data-provider="getProductData" finished-at="2022-06-26T17:24:50Z" duration-ms="678" status="PASS">
+        <test-method signature="searchtest(java.lang.String)[pri:0, instance:com.qa.opencart.tests.HomePageTest@3c153a1]" started-at="2022-06-26T17:59:23Z" name="searchtest" data-provider="getProductData" finished-at="2022-06-26T17:59:24Z" duration-ms="748" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -41,7 +41,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchtest -->
-        <test-method signature="searchtest(java.lang.String)[pri:0, instance:com.qa.opencart.tests.HomePageTest@11392934]" started-at="2022-06-26T17:24:50Z" name="searchtest" data-provider="getProductData" finished-at="2022-06-26T17:24:51Z" duration-ms="544" status="PASS">
+        <test-method signature="searchtest(java.lang.String)[pri:0, instance:com.qa.opencart.tests.HomePageTest@3c153a1]" started-at="2022-06-26T17:59:24Z" name="searchtest" data-provider="getProductData" finished-at="2022-06-26T17:59:25Z" duration-ms="712" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -52,11 +52,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchtest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.opencart.tests.HomePageTest@11392934]" started-at="2022-06-26T17:24:51Z" name="tearDown" finished-at="2022-06-26T17:24:51Z" duration-ms="239" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.opencart.tests.HomePageTest@3c153a1]" started-at="2022-06-26T17:59:25Z" name="tearDown" finished-at="2022-06-26T17:59:25Z" duration-ms="65" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.qa.opencart.tests.HomePageTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Open Cart Home Page Test -->
+  </suite> <!-- Open Cart Test Regression PW Suite -->
 </testng-results>

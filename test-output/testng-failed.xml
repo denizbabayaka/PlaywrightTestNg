@@ -6,8 +6,6 @@
       <class name="com.qa.opencart.tests.HomePageTest">
         <methods>
           <include name="setUp"/>
-          <include name="homePageTitleTest"/>
-          <include name="searchtest"/>
           <include name="tearDown"/>
           <include name="homePageURLTest"/>
         </methods>
