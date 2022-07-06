@@ -1,5 +1,5 @@
 package com.qa.opencart.tests;
-import java.nio.file.AccessDeniedException;
+
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -26,9 +26,10 @@ public class LoginPageTest extends BaseTest {
 	}
 	
 	@Test(priority = 3)
-	public void appLoginTest() {
+	public void appLoginTest()    {
 		Assert.assertTrue(loginPage.doLogin(prop.getProperty("username").trim(),prop.getProperty("password").trim()));
 		
+		//loginPage.doLogin(prop.getProperty("username").trim(),prop.getProperty("password").trim());
 	}
 	
 

@@ -26,7 +26,7 @@ public class LoginPage {
 		return page.isVisible(forgotPwdLink);
 	}
 
-	public boolean doLogin(String appUserName, String appPassword) {
+	public boolean doLogin(String appUserName, String appPassword)  {
 		System.out.println("App creds:" + appUserName + ":" + appPassword);
 		page.fill(emailId, appUserName);
 		page.fill(password, appPassword);
