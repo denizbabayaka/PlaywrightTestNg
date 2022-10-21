@@ -15,7 +15,8 @@ public class HomePage {
 	private String MyaccountLink = "a[title='My Account']";
 	private String loginLink = "a:text('Login')";
 
-	// 2. page constructor;
+	// 2. page constructor;when we call HomePage constructor and pass the page parameter we 
+	//initilazy(page) object of the class 
 	public HomePage(Page page) {
 		this.page = page;
 	}

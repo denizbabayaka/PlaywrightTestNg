@@ -7,7 +7,9 @@
         <methods>
           <include name="appLoginTest"/>
           <include name="setUp"/>
+          <include name="loginPageNavigationTest"/>
           <include name="tearDown"/>
+          <include name="forgotPwdLinkExistTest"/>
         </methods>
       </class> <!-- com.qa.opencart.tests.LoginPageTest -->
     </classes>
